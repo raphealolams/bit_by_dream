@@ -117,3 +117,27 @@
         }
     }
 }
+
+.featured-brands{
+    display: grid;
+    background: #fff;
+    border:  1px $primary-color;
+
+    .featured-brands-images{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .featured-brands-text{
+        
+    }
+}
+
+.footer {
+    display: grid;
+    .footer-support{
+        display: flex;
+        justify-content: space-between;
+        background-color: #2e2e2e
+    }
+}
