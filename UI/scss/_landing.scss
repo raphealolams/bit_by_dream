@@ -1,0 +1,143 @@
+@import 'config';
+@import '_utilities';
+
+.landing {
+    position: relative;
+    background: url('https://res.cloudinary.com/ajilore/image/upload/v1557656677/hey.jpg') no-repeat center center/cover;
+    height: 100vh;
+
+    &-inner {
+        color: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+    }
+}
+
+.feature-product {
+    display: grid;
+    grid-template-areas: 
+        'product product product product product product';
+
+
+    .product{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        img {
+            width: 130px;
+        }
+
+        a {
+            color: $dark-color;
+        }
+
+       
+    }
+}
+
+.latest-deals {
+    .latest-deals-highlight {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $primary-color;
+
+            &:hover {
+                color: $danger-color;
+            }
+        }
+    }
+
+    .latest-deals-items {
+        display: grid;
+        grid-template-areas: 
+            'items items items items items';
+        grid-gap: 1rem;
+
+
+        .items{
+            
+            border: solid 1px $light-color;
+            opacity: 0.9; 
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            a {
+                color: $dark-color;
+            }
+
+            &:hover {
+               
+            }
+        }
+    }
+}
+
+.recommended-for-you {
+    .recommended-for-you-highlight {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $primary-color;
+
+            &:hover {
+                color: $danger-color;
+            }
+        }
+    }
+
+    .recommended-for-you-items{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+
+        .items {
+            flex: 1;
+            padding: 1em;
+            border: solid 1px $light-color;
+            padding: 0.4rem;
+            margin: 0.4rem;
+            opacity: 0.9;
+
+            a{
+                color: $dark-color;
+            }
+        }
+    }
+}
+
+.featured-brands{
+    display: grid;
+    background: #fff;
+    border:  1px $primary-color;
+
+    .featured-brands-images{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .featured-brands-text{
+        
+    }
+}
+
+.footer {
+    display: grid;
+    .footer-support{
+        display: flex;
+        justify-content: space-between;
+        background-color: #2e2e2e
+    }
+}
